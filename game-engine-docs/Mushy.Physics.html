@@ -98,7 +98,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1526">line 1526</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1524">line 1524</a>
     </li></ul></dd>
     
 
@@ -202,7 +202,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1547">line 1547</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1545">line 1545</a>
     </li></ul></dd>
     
 
@@ -230,7 +230,7 @@
     
 
     
-    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(matterSprite)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="addBody"><span class="type-signature"></span>addBody<span class="signature">(matterBody)</span><span class="type-signature"></span></h4>
     
 
     
@@ -274,13 +274,13 @@
 
         <tr>
             
-                <td class="name"><code>matterSprite</code></td>
+                <td class="name"><code>matterBody</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MatterSprite</span>
+<span class="param-type">MatterBody</span>
 
 
             
@@ -331,7 +331,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1629">line 1629</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1627">line 1627</a>
     </li></ul></dd>
     
 
@@ -367,7 +367,144 @@
     
 
     
-    <h4 class="name" id="applyGravity"><span class="type-signature"></span>applyGravity<span class="signature">(matterSprite)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="addConstraint"><span class="type-signature"></span>addConstraint<span class="signature">(constraint)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Adds the constraint to the physics engine.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>constraint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Matter constraint created from Physics.constraint()</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1648">line 1648</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="applyGravity"><span class="type-signature"></span>applyGravity<span class="signature">(matterBody)</span><span class="type-signature"></span></h4>
     
 
     
@@ -411,13 +548,13 @@
 
         <tr>
             
-                <td class="name"><code>matterSprite</code></td>
+                <td class="name"><code>matterBody</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MatterSprite</span>
+<span class="param-type">MatterBody</span>
 
 
             
@@ -468,7 +605,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1620">line 1620</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1618">line 1618</a>
     </li></ul></dd>
     
 
@@ -504,7 +641,441 @@
     
 
     
-    <h4 class="name" id="circle"><span class="type-signature"></span>circle<span class="signature">(x, y, radius)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="removeBody"><span class="type-signature"></span>removeBody<span class="signature">(matterBody)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Removes the body from the physics engine.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>matterBody</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MatterBody</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1637">line 1637</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="removeConstraint"><span class="type-signature"></span>removeConstraint<span class="signature">(constraint)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Removes the constraint from the physics engine.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>constraint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Matter constraint created from Physics.constraint()</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1657">line 1657</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setGravity"><span class="type-signature"></span>setGravity<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Sets the gravity of the physics.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1667">line 1667</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".circle"><span class="type-signature">(static) </span>circle<span class="signature">(x, y, radius)</span><span class="type-signature"></span></h4>
     
 
     
@@ -651,7 +1222,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1575">line 1575</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1573">line 1573</a>
     </li></ul></dd>
     
 
@@ -687,7 +1258,144 @@
     
 
     
-    <h4 class="name" id="customShape"><span class="type-signature"></span>customShape<span class="signature">(x, y, vertices)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".constraint"><span class="type-signature">(static) </span>constraint<span class="signature">(options)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates a new constraint. See the <a href="https://brm.io/matter-js/docs/classes/Constraint.html">documentation for Matter.Constraint</a> for options.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The options for the constraint. See the link above for more info.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1700">line 1700</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".customShape"><span class="type-signature">(static) </span>customShape<span class="signature">(x, y, vertices)</span><span class="type-signature"></span></h4>
     
 
     
@@ -834,7 +1542,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1611">line 1611</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1609">line 1609</a>
     </li></ul></dd>
     
 
@@ -870,7 +1578,7 @@
     
 
     
-    <h4 class="name" id="polygon"><span class="type-signature"></span>polygon<span class="signature">(x, y, sides, radius)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".polygon"><span class="type-signature">(static) </span>polygon<span class="signature">(x, y, sides, radius)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1040,7 +1748,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1587">line 1587</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1585">line 1585</a>
     </li></ul></dd>
     
 
@@ -1076,7 +1784,7 @@
     
 
     
-    <h4 class="name" id="rectangle"><span class="type-signature"></span>rectangle<span class="signature">(x, y, width, height)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".rectangle"><span class="type-signature">(static) </span>rectangle<span class="signature">(x, y, width, height)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1246,7 +1954,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1564">line 1564</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1562">line 1562</a>
     </li></ul></dd>
     
 
@@ -1282,304 +1990,7 @@
     
 
     
-    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">(matterSprite)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Removes the body from the physics engine.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>matterSprite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">MatterSprite</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1640">line 1640</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="setGravity"><span class="type-signature"></span>setGravity<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Sets the gravity of the physics.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1653">line 1653</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="trapezoid"><span class="type-signature"></span>trapezoid<span class="signature">(x, y, width, height, slope)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".trapezoid"><span class="type-signature">(static) </span>trapezoid<span class="signature">(x, y, width, height, slope)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1772,7 +2183,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1600">line 1600</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1598">line 1598</a>
     </li></ul></dd>
     
 
@@ -1818,13 +2229,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.Group.html">Group</a></li><li><a href="Mushy.Input.html">Input</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterSprite.html">MatterSprite</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.Group.html">Group</a></li><li><a href="Mushy.Input.html">Input</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterBody.html">MatterBody</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Matter">Matter</a></li><li><a href="global.html#fullscreen">fullscreen</a></li><li><a href="global.html#isFullscreen">isFullscreen</a></li><li><a href="global.html#isKhanAcademy">isKhanAcademy</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Mar 06 2025 16:18:11 GMT-0700 (Mountain Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Mar 09 2025 14:05:52 GMT-0600 (Mountain Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>

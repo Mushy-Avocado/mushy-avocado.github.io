@@ -31,7 +31,7 @@
         <h2><span class="attribs"><span class="type-signature"></span></span>
             <span class="ancestors"><a href="Mushy.html">Mushy</a>.</span>Group<span class="signature">(items<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">A collection of matter sprites.</div>
+            <div class="class-description">A collection of items that has an event system that detects when items are added or removed.</div>
         
     
 </header>
@@ -100,7 +100,7 @@
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;MatterSprite></span>
+<span class="param-type">Array</span>
 
 
             
@@ -167,7 +167,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1192">line 1192</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1190">line 1190</a>
     </li></ul></dd>
     
 
@@ -231,7 +231,7 @@
 
 
 <div class="description">
-    Adds a matter sprite to the group.
+    Adds an item to the group.
 </div>
 
 
@@ -273,7 +273,7 @@
             <td class="type">
             
                 
-<span class="param-type">MatterSprite</span>
+<span class="param-type">*</span>
 
 
             
@@ -324,7 +324,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1214">line 1214</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1212">line 1212</a>
     </li></ul></dd>
     
 
@@ -412,7 +412,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1235">line 1235</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1233">line 1233</a>
     </li></ul></dd>
     
 
@@ -456,7 +456,7 @@
 
 
 <div class="description">
-    Invokes the given callback on each item in the group, passing a MatterSprite to it.
+    Invokes the given callback on each item in the group, passing each item to it.
 </div>
 
 
@@ -549,7 +549,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1244">line 1244</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1242">line 1242</a>
     </li></ul></dd>
     
 
@@ -593,7 +593,7 @@
 
 
 <div class="description">
-    Removes a matter sprite from the group.
+    Removes an item from the group.
 </div>
 
 
@@ -635,7 +635,7 @@
             <td class="type">
             
                 
-<span class="param-type">MatterSprite</span>
+<span class="param-type">*</span>
 
 
             
@@ -686,7 +686,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1224">line 1224</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1222">line 1222</a>
     </li></ul></dd>
     
 
@@ -732,13 +732,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.Group.html">Group</a></li><li><a href="Mushy.Input.html">Input</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterSprite.html">MatterSprite</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.Group.html">Group</a></li><li><a href="Mushy.Input.html">Input</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterBody.html">MatterBody</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Matter">Matter</a></li><li><a href="global.html#fullscreen">fullscreen</a></li><li><a href="global.html#isFullscreen">isFullscreen</a></li><li><a href="global.html#isKhanAcademy">isKhanAcademy</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Mar 06 2025 16:18:11 GMT-0700 (Mountain Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Mar 09 2025 14:05:52 GMT-0600 (Mountain Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
