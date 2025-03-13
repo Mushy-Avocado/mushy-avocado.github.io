@@ -98,7 +98,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1251">line 1251</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1162">line 1162</a>
     </li></ul></dd>
     
 
@@ -162,7 +162,7 @@
 
 
 <div class="description">
-    Listens for 2 objects colliding and invokes the callback. The callback recieves a, b, and the collision data, which is a Matter.js collision object.
+    Listens for 2 matter bodies colliding and invokes the callback. The callback recieves a, b, and the collision data, which is a <a href="https://brm.io/matter-js/docs/classes/Collision.html">Matter.js collision object</a>. You must call CollisionListenManager#remove() when either object is no longer in use, otherwise it will cause performance issues.
 </div>
 
 
@@ -205,9 +205,6 @@
             
                 
 <span class="param-type">MatterBody</span>
-|
-
-<span class="param-type">Group</span>
 
 
             
@@ -231,9 +228,6 @@
             
                 
 <span class="param-type">MatterBody</span>
-|
-
-<span class="param-type">Group</span>
 
 
             
@@ -307,7 +301,167 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1282">line 1282</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1197">line 1197</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="signature">(a, b)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Stops listening for collisions between two matter bodies.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MatterBody</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>b</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MatterBody</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1181">line 1181</a>
     </li></ul></dd>
     
 
@@ -395,7 +549,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1387">line 1387</a>
+        <a href="gameengine.js.html">gameengine.js</a>, <a href="gameengine.js.html#line1239">line 1239</a>
     </li></ul></dd>
     
 
@@ -441,13 +595,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.Group.html">Group</a></li><li><a href="Mushy.Input.html">Input</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterBody.html">MatterBody</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Matter">Matter</a></li><li><a href="global.html#fullscreen">fullscreen</a></li><li><a href="global.html#isFullscreen">isFullscreen</a></li><li><a href="global.html#isKhanAcademy">isKhanAcademy</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Mushy.html">Mushy</a></li><li><a href="Mushy.Console.html">Console</a></li><li><a href="Mushy.Mathf.html">Mathf</a></li></ul><h3>Classes</h3><ul><li><a href="Mushy.CanvasFit.html">CanvasFit</a></li><li><a href="Mushy.CollisionListenManager.html">CollisionListenManager</a></li><li><a href="Mushy.CollisionManager.html">CollisionManager</a></li><li><a href="Mushy.Console.CommandLine.html">CommandLine</a></li><li><a href="Mushy.EventSystem.html">EventSystem</a></li><li><a href="Mushy.KeyInput.html">KeyInput</a></li><li><a href="Mushy.Loop.html">Loop</a></li><li><a href="Mushy.MatterBody.html">MatterBody</a></li><li><a href="Mushy.MouseInput.html">MouseInput</a></li><li><a href="Mushy.Physics.html">Physics</a></li><li><a href="Mushy.Renderer.html">Renderer</a></li><li><a href="Mushy.Scene.html">Scene</a></li><li><a href="Mushy.SceneManager.html">SceneManager</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Mar 09 2025 14:05:52 GMT-0600 (Mountain Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Wed Mar 12 2025 22:46:13 GMT-0600 (Mountain Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
